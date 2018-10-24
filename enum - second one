@@ -1,0 +1,29 @@
+/* * * * * * * * * * *
+  
+  TextBlock = Window_ViewText.text;
+  
+  ViewList = Window_ViewList.ItemsSource;
+  
+* * * * * * * * * * * */
+
+//Code Switch & enum//
+
+Enum Programmer_Stereotypes
+{
+ 
+ /* While(alive) */
+ 
+ Eat,
+ Code,
+ sleep,
+ repeat
+ 
+}
+
+void Stereotypes()
+{
+
+  Programmer_Stereotypes = Programmer_Stereotypes.Eat;
+  var Show_WindowList_PS.ItemsSource = Enum.GetValue(typeof(Programmer_Stereotypes));
+
+}
